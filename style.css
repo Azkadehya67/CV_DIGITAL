@@ -201,3 +201,66 @@ footer{
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .links{
+        display: none;
+    }
+
+    .hamburg{
+        display: block;
+        font-size: 1.8rem;
+        color: #1e3a8a;
+        cursor: pointer;
+    }
+
+    .dropdown{
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        background: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        transform: translateY(-500px);
+        transition: 0.4s ease;
+    }
+
+    .dropdown .links a{
+        display: block;
+        margin: 15px 0;
+    }
+
+    /* SECTION */
+    section{
+        padding: 100px 30px;
+    }
+
+    /* MAIN */
+    .main-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .image img{
+        width: 240px;
+    }
+
+    /* SOCIAL */
+    .social{
+        justify-content: center;
+    }
+
+    /* SKILLS */
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+    .contact-card{
+        padding: 35px 25px;
+    }
+}
+
